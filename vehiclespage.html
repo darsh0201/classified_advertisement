@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Vehicles</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.vecteezy.com/free-vector/lines"
+    />
+    <link rel="stylesheet" href="exp_WP.css" />
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196f3;
+      padding: 2.5px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 0.5px solid rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      font-size: 30px;
+      text-align: center;
+    }
+  </style>
+  <body bgcolor="lightblue">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <div id="grid-container">
+      <div id="product">
+        <div class="grid-item">
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.LV1UudJrhduiDGYNjd8UEwHaE4&pid=Api&P=0&w=258&h=171"
+          />
+
+          <div class="desc" style="margin-bottom: 2px">
+            <br />Mahindra Truck<br />
+            $20000
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.oc9JI-ZNYaXTLiR34gIHQgHaE8&pid=Api&P=0&w=240&h=161"
+          />
+
+          <div class="desc">
+            Harley Davidson <br />
+            $8000
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse2.mm.bing.net/th?id=OIP.qYJSGAS-MCOu1EQ78uLAdQHaEK&pid=Api&P=0&w=271&h=153"
+          />
+
+          <div class="desc" style="margin-top: 13px">
+            Audi A6<br />
+            <del>$59900</del> &nbsp;
+            <span style="color: crimson"><b>$54900</b></span>
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+          <script>
+            function cart() {
+              alert("Successfully Added to your Cart!");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

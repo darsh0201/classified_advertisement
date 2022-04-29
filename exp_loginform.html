@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log in Form</title>
+  </head>
+
+  <body
+    style="
+      background: rgb(238, 174, 202);
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+    "
+  >
+    <h1>LOG IN</h1>
+    <div class="container">
+      <form
+        id="signup"
+        class="form"
+        style="text-align: left; padding-left: 2%"
+        onreset="myReset()"
+        onsubmit="mySubmit()"
+      >
+        <br />
+        <div class="form-field">
+          <label for="Email">Email:</label>
+          <input type="text" name="email" id="email" autocomplete="off" />
+          <br />
+          <small></small>
+        </div>
+        <br />
+        <div class="form-field">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="off"
+          />
+          <br />
+          <small></small>
+        </div>
+        <br />
+        <div class="form-field">
+          <input type="submit" value="Log In" onclick="mySubmit()" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </div>
+
+    <script src="./exp_formValidation.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("fullname");
+        x.value = x.value.toUpperCase();
+      }
+      function myReset() {
+        alert("You have reset the form");
+      }
+      function mySubmit() {
+        alert("You have been successfully logged in");
+      }
+    </script>
+  </body>
+</html>

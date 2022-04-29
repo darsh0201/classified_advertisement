@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Pets</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.vecteezy.com/free-vector/lines"
+    />
+    <link rel="stylesheet" href="exp_WP.css" />
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196f3;
+      padding: 2.5px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 0.5px solid rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      font-size: 30px;
+      text-align: center;
+    }
+  </style>
+  <body bgcolor="lightblue">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <div id="grid-container">
+      <div id="product">
+        <div class="grid-item">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.prXztO8Rkw9V1W20fdmwQAHaJ3&pid=Api&P=0&w=300&h=300"
+          />
+
+          <div class="desc" style="margin-bottom: 2px">
+            <br />Shih Tzu <br />
+            $300
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.W88CMYlSo950P8VBtiDxAQHaE9&pid=Api&P=0&w=225&h=152"
+          />
+
+          <div class="desc">
+            Persian Cat <br />
+            $200
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.n5zMzuhlBbgDn3cW62obmAHaF7&pid=Api&P=0&w=226&h=182"
+          />
+
+          <div class="desc" style="margin-top: 13px">
+            Love birds<br />
+            <del>$120</del> &nbsp;
+            <span style="color: crimson"><b>$110</b></span>
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+          <script>
+            function cart() {
+              alert("Successfully Added to your Cart!");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

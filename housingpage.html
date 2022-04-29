@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Housing</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.vecteezy.com/free-vector/lines"
+    />
+    <link rel="stylesheet" href="exp_WP.css" />
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196f3;
+      padding: 2.5px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 0.5px solid rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      font-size: 30px;
+      text-align: center;
+    }
+  </style>
+  <body bgcolor="lightblue">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <div id="grid-container">
+      <div id="product">
+        <div class="grid-item">
+          <img
+            src=" https://tse2.mm.bing.net/th?id=OIP.Zq1XrmqtVro6pBLfGuP_kgHaFj&pid=Api&P=0&w=228&h=172"
+          />
+
+          <div class="desc" style="margin-bottom: 2px">
+            <br />2 BHK Bungalow <br />
+            $300000
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.HCpHqunBbhib3keUnQoUggHaE8&pid=Api&P=0&w=231&h=155"
+          />
+
+          <div class="desc">
+            Storage 2000sqft <br />
+            $200000
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.XB72kUj7I6e985G7M3dGrgHaEK&pid=Api&P=0&w=295&h=167"
+          />
+
+          <div class="desc" style="margin-top: 13px">
+            3 BHK Apartment<br />
+            <del>$399000</del> &nbsp;
+            <span style="color: crimson"><b>$349000</b></span>
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+          <script>
+            function cart() {
+              alert("Successfully Added to your Cart!");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

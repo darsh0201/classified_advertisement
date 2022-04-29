@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link btn-info" href="exp2_createpostingform.html"
+            >CREATE A POSTING</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-info" href="exp_loginform.html">LOGIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-info" href="exp_signupform.html">REGISTER</a>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      var app = angular.module("sellproduct", []);
+      app.controller("my_Ctrl", function ($scope) {
+        $scope.name = [];
+        $scope.addingnewproduct = function () {
+          $scope.errortext = "";
+          if (!$scope.addproduct) {
+            return;
+          }
+          if ($scope.name.indexOf($scope.addproduct) == -1) {
+            $scope.name.push($scope.addproduct);
+          } else {
+            $scope.errortext = "This product is already in the list.";
+          }
+        };
+        $scope.remove = function (x) {
+          $scope.errortext = "";
+          $scope.name.splice(x, 1);
+        };
+      });
+    </script>
+    <div
+      ng-app="sellproduct"
+      ng-controller="my_Ctrl"
+      style="text-align: center"
+    >
+      <h4>Enter products you want to sell</h4>
+      <input class="form-control-sm" ng-model="addproduct" />
+      <button class="btn btn-primary" ng-click="addingnewproduct()">Add</button>
+      <p>{{errortext}}</p>
+      <h2>Products to sell</h2>
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <th>Product Name</th>
+          <th colspan="2">Actions</th>
+        </thead>
+        <tbody>
+          <tr ng-repeat="x in name">
+            <td>{{x}}</td>
+            <td>
+              <span ng-click="remove($index)"
+                ><button type="button" class="btn btn-danger btn-sm">
+                  <i class="bi bi-x-circle"></i></button
+              ></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

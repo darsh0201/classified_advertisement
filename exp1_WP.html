@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="stylesheet" href="exp_WP.css">
+    </head>
+    <style>
+        body {
+  background-color: beige;
+  background-image: url();
+        }
+        h1 {
+  text-align: center;
+        }
+        table {
+  align-items: center;
+        }
+    </style>
+    <script src="exp_formValidation.js"></script>
+    <body onload="load()">
+
+    <div class = "header" onclick="click()">
+    <h1 id="logo">Classified Advertisements</h1>
+    </div>
+    <P id='intro' onmousedown="mouseDown()" onmouseup="mouseUp()"> This is a classified Advertisement Website <br> which can be used to create an ad posting and sell your stuff and also buy stuff from other people. Also used to search for houses, jobs and pets.</p>
+    <a href="reactpage.html"><button onclick="myFunction()">Click to sell</button></a>
+    <p id="clickpara"></p>
+    <p id="coupon">Double-click for a surprise.</p>
+    <nav>
+    <button><a href="exp2_createpostingform.html" style="color:black;text-align: center; background-color: white;" onmouseover="this.innerHTML= 'Create an ad here'">Create a Posting</a></button>
+    <button><a href="exp_signupform.html" style="background-color:white;" onmouseover="this.innerHTML='Sign up'">Create an Account</a></button>
+    <button id="login"><a href="exp_loginform.html" onmouseover="this.innerHTML='Log in'" style="background-color:white;">Login</a></button>
+    </nav>
+    <div id="rightbar" style="text-align: right;" onchange="langchange()">
+    <div id="langlinks"><select id="chlang" class="js-only" name="lang">
+    <option value="?lang=da&setlang=1">Hindi</option>
+    <option value="?lang=de&setlang=1">Marathi</option>
+    <option selected="selected" value="?lang=en&cc=us&setlang=1">English</option>
+    <option value="?lang=fr&setlang=1">Gujarati</option>
+    <option value="?lang=it&setlang=1">Kannada</option>
+    <option value="?lang=pt&setlang=1">Telugu</option>
+    <option value="?lang=fi&setlang=1">Tamil</option>
+    <option value="?lang=sv&setlang=1">Malayalam</option>
+    </select>
+    <p id="lang"></p>
+    </div>
+    </div>
+    <p>
+    <section>
+    <div id="rightbar" style="text-align: right;">
+    <div id="langlinks"><select id="chlang" class="js-only" name="place">
+    <option value="?lang=da&setlang=1">Chennai</option>
+    <option value="?lang=de&setlang=1">Delhi</option>
+    <option selected="selected" value="?lang=en&cc=us&setlang=1">Mumbai</option>
+    <option value="?lang=fr&setlang=1">Kolkata</option>
+    <option value="?lang=it&setlang=1">Banglore</option>
+    <option value="?lang=pt&setlang=1">Pune</option>
+    <option value="?lang=fi&setlang=1">Hyderabad</option>
+    </select>
+    </div>
+    </div>
+    </section>
+    <p>
+    <table cellspacing =35>
+    <tr>
+    <th><h3 class="ban"><a class="ccc" href="electronicspage.html"><span
+    class="txt"><div class="img"><img width="400px" height="300px" src="https://images.cnbctv18.com/wp-content/uploads/2021/04/electronics-768x432.jpg"><br>Electronics</span></a></h3></th></div>
+    <th><h3 class="ban"><a class="bbb" href="vehiclespage.html"><span
+    class="txt"><div class="img"><img width="500px" height="300px" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg?crop=1xw:0.9997727789138833xh;center,top&resize=480:*"><br>Cars and Vehicles</span></a></h3></th></div>
+    <th><h3 class="ban"><a class="hhh" href="jobspage.html"><span
+    class="txt"><div class="img"><img width="500px" height="300px" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202010/stockvault-job-opportunity2594_1200x768.jpeg?WOhGS5AMx176iZZgnpSD0xT2GrYv_HYQ&size=770:433"><br>Jobs</span></a></h3></th></div>
+    </tr>
+    <tr>
+    <td>
+        <li><span class="txt">CDS/DVD/VHS</span></li>
+        <li><span class="txt">Smartphones</span></li>
+        <li><span class="txt">Computer Parts</span></li>
+        <li><span class="txt">Computers</span></li>
+        <li><span class="txt">Gaming</span></li>
+        <li><span class="txt">Televisions</span></li>
+    </ul>
+    </td>
+    <td>
+    <li><span class="txt">Cars</span></li>
+    <li><span class="txt">Bikes</span></li>
+    <li><span class="txt">Scooty</span></li>
+    <li><span class="txt">Trucks</span></li>
+    <li><span class="txt">Vans</span></li>
+    <li><span class="txt">Rickshaw</span></li>
+    </ul>
+    </td>
+    <td>
+    <li><span class="txt">Corporate</span></li>
+    <li><span class="txt">Private</span></li>
+    <li><span class="txt">Banking</span></li>
+    <li><span class="txt">Government</span></li>
+    <li><span class="txt">Teaching</span></li>
+    </ul>
+    </td>
+    </tr>
+    </table>
+    <table cellspacing =35>
+        <tr>
+        <th><h3 class="ban"><a class="sss" href="petspage.html"><span class="txt"><div class="img"><img width="400px" height="300px" src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-111638,resizemode-1,msid-79579735/wealth/insure/other-risk-covers/what-pet-insurance-covers-how-much-it-costs-and-the-products-on-offer.jpg"><br>Pets</span></a></h3></th></div>
+        <th><h3 class="ban"><a class="jjj" href="hobbiespage.html"><span class="txt"><div class="img"><img width="500px" height="300px" src="https://mongooseagency.com/files/3415/9620/1413/Return_of_Sports.jpg"><br>Hobbies and Sports</span></a></h3></th></div>
+        <th><h3 class="ban"><a class="jjj" href="housingpage.html"><span class="txt"><div class="img"><img width="500px" height="300px" src="https://www.blogandjournal.com/wp-content/uploads/2017/01/The-Future-of-Housing.jpg"><br>Housing</span></a></h3></th></div>
+    </tr>
+    <tr>
+    <td>
+    <li><span class="txt">Dogs</span></li>
+    <li><span class="txt">Cats</span></li>
+    <li><span class="txt">birds</span></li>
+    <li><span class="txt">hamster</span></li>
+    <li><span class="txt">tortoise</span></li>
+    <li><span class="txt">other</span></li>
+    </ul>
+    </td>
+    <td>
+    <li><span class="txt">Football equipments</span></li>
+    <li><span class="txt">Cricket equipments</span></li>
+    <li><span class="txt">Basketball equipments</span></li>
+    <li><span class="txt">Golf equipments</span></li>
+    <li><span class="txt">Cycling equipments</span></li>
+    <li><span class="txt">Swimming equipments</span></li>
+    <li><span class="txt">Other</span></li>
+    </ul>
+    </td>
+    <td>
+        <li><span class="txt">Apts/Housing</span></li>
+        <li><span class="txt">Office/Commercial</span></li>
+        <li><span class="txt">Parking/Storage</span></li>
+        <li><span class="txt">Real Estate for Sale</span></li>
+        <li><span class="txt">Rooms</span></li>
+        <li><span class="txt">Sublets/temporary</span></li>
+        <li><span class="txt">Vacation Rentals</span></li>
+    </ul>
+    </td>
+    </tr>
+    </table>
+    </div>
+    </div> 
+    <div class = "footer">
+    <footer>
+    <nav>
+    <a href="">Help</a> |
+    <a href="">Legal Queries</a> |
+    <a href="">Safety Against Fraud</a> |
+    <a href="">Terms of Use</a> |
+    <a href="">Privacy Policy</a> |
+    <a href="">Blog</a>
+    </nav>
+    </footer>
+    </div>
+    <script>
+        function mouseUp(){
+            document.getElementById("intro").style.color="blue";
+        }
+        function mouseDown(){
+            document.getElementById("intro").style.color="red";
+        }
+        function click()
+        {
+            document.getElementById("clickpara").innerHTML="Click on create posting to sell stuff";
+        }
+
+        document.getElementById("coupon").addEventListener("dblclick", myFunction);
+
+        function myFunction() {
+            document.getElementById("coupon").innerHTML = "use coupon DARSH10 for 10% off";
+        }
+        function load(){
+            alert("page is loaded");
+        }
+        function langchange(){
+            document.getElementById("lang").innerHTML="Only english is available at the moment";
+        }
+    </script>    
+    <script>
+    function myFunction() {
+      document.getElementById("clickpara").innerHTML = "Click on create posting to sell";
+    }
+    </script>
+    
+    </body>
+</html>

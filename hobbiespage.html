@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Hobbies</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.vecteezy.com/free-vector/lines"
+    />
+    <link rel="stylesheet" href="exp_WP.css" />
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196f3;
+      padding: 2.5px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 0.5px solid rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      font-size: 30px;
+      text-align: center;
+    }
+  </style>
+  <body bgcolor="lightblue">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <div id="grid-container">
+      <div id="product">
+        <div class="grid-item">
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.qroziUXshu22uR5-ke8eKgHaHa&pid=Api&P=0&w=300&h=300"
+          />
+
+          <div class="desc" style="margin-bottom: 2px">
+            <br />Golf bag <br />
+            $80
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.QpsDJeHnD6tcNVF09cYquQHaGt&pid=Api&P=0&w=185&h=169"
+          />
+
+          <div class="desc">
+            Cricket Kit<br />
+            $140
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.wG7jzoSouQceIWQgU4GFnwHaHa&pid=Api&P=0&w=300&h=300"
+          />
+
+          <div class="desc" style="margin-top: 13px">
+            Football Kit<br />
+            <del>$99</del> &nbsp;
+            <span style="color: crimson"><b>$89</b></span>
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+          <script>
+            function cart() {
+              alert("Successfully Added to your Cart!");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

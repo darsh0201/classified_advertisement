@@ -1,0 +1,44 @@
+.img {
+  height: 300px;
+  padding: 5px;
+  border: black;
+}
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+  cursor: auto;
+}
+a:link:active,
+a:visited:active {
+  color: blue;
+}
+.footer {
+  opacity: 0.5;
+  border: 5px;
+  background-color: gray;
+  text-align: center;
+  width: fit-content;
+  padding: 10px;
+  transition: 2s;
+}
+.header {
+  box-shadow: 5px 10px brown;
+  background-color: gray;
+  text-align: center;
+  width: 1480px;
+  transform: rotate(359deg);
+}
+table {
+  background-image: linear-gradient(to bottom right, gray, brown);
+}
+.footer:hover {
+  width: 1480px;
+}
+#intro::first-line {
+  font-size: large;
+  font-style: oblique;
+}
+.button_cart {
+  color: burlywood;
+}

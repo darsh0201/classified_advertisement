@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Jobs</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.vecteezy.com/free-vector/lines"
+    />
+    <link rel="stylesheet" href="exp_WP.css" />
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196f3;
+      padding: 2.5px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 0.5px solid rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      font-size: 30px;
+      text-align: center;
+    }
+  </style>
+  <body bgcolor="lightblue">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <div id="grid-container">
+      <div id="product">
+        <div class="grid-item">
+          <img
+            src="https://tse2.mm.bing.net/th?id=OIP.DZQjti_MlbMEDyHacPRXjwHaEK&pid=Api&P=0&w=263&h=149"
+          />
+
+          <div class="desc" style="margin-bottom: 2px">
+            <br />Software Engineer<br />
+            $3000 per month
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.WTtUoOQNHFMOQE6nyr_SYwHaEc&pid=Api&P=0&w=300&h=181"
+          />
+
+          <div class="desc">
+            Salesman <br />
+            $1500
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+        </div>
+
+        <div class="grid-item">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.Hd_ltubIGfor9rctVfgrCgHaFI&pid=Api&P=0&w=227&h=158"
+          />
+
+          <div class="desc" style="margin-top: 13px">
+            Housekeeping<br />
+            $1000 per month
+          </div>
+          <button id="button_cart" onclick="cart()">Add to Cart</button>
+          <script>
+            function cart() {
+              alert("Successfully Added to your Cart!");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
